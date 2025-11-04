@@ -2,7 +2,8 @@
 
 **Authors:** Ana Beatriz Santos de Oliveira, Ana Luiza Diniz Santos, Larissa Anielle Terrinha de Oliveira
 
-[cite_start]This project optimizes a C++ Median and Sobel filter pipeline for the ARM Cortex-A9 processor[cite: 9, 27]. [cite_start]We applied manual (algorithmic, data access) [cite: 17, 18] [cite_start]and compiler (`-O3`) optimizations[cite: 19].
+This project optimizes a C++ Median and Sobel filter pipeline for the ARM Cortex-A9 processor
+We applied manual (algorithmic, data access) and compiler (`-O3`) optimizations.
 
 ---
 
@@ -44,3 +45,4 @@
     ```
     
 ---
+
