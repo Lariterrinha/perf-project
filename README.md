@@ -25,6 +25,13 @@ We applied manual (algorithmic, data access) and compiler (`-O3`) optimizations.
 * `my_functions.cpp`: Our optimized filter implementations.
 
 ---
+## Quick Links to Key Files:
+### projet_24_v1.cpp:
+The main application file, which handles video I/O, benchmarking, and calls the filter functions.
+### my_functions.cpp
+The core implementation file containing the final optimized versions of my_sobel() and my_median().
+### /Versions/
+This directory contains the source code snapshots from each progressive optimization step (e.g., algorithm_changes, loop_unrolling, optimal_data_access) for analysis, as described in the methodology
 
 ## 🛠️ Build and Run (Optimized)
 
@@ -45,4 +52,5 @@ We applied manual (algorithmic, data access) and compiler (`-O3`) optimizations.
     ```
     
 ---
+
 
