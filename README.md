@@ -35,22 +35,46 @@ This directory contains the source code snapshots from each progressive optimiza
 
 ## 🛠️ Build and Run (Optimized)
 
-1.  **Transfer Files:**
+1.Conection
+```bash
+        ssh -X linaro@192.168.1.2
+        export DISPLAY=localhost:10.0
+```
+
+2. Test
+```bash
+        xeyes
+        cd code/
+```
+   
+3.  **Transfer Files:** 
     ```bash
     scp projet_24_v1.cpp linaro@192.168.1.2:~/
     scp my_functions.cpp my_functions.hpp linaro@192.168.1.2:~/
     ```
-    
-2.  **Compile (on board):**
+
+4. See cameras to change on the code
+   ```bash
+    sudo rm /dev/video*
+   ```
+   ```bash
+    ls /dev/video*
+   ```
+   
+   
+3.  **Compile (on board):**
     ```bash
-    ssh linaro@192.168.1.2 'cd ~ && g++ -O3 projet_24_v1.cpp my_functions.cpp -o meu_app_O3 -I/usr/include/opencv4 -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_imgcodecs -lm && echo "=== O3 OK ==="'
+
+    g++ -03 `pkg-config --cflags opencv` projet_24_v1.cpp my_functions.cpp `pkg-config --libs opencv` -o meu_codigo -lm
+   
     ```
     
-3.  **Run (on board):**
+4.  **Run (on board):**
     ```bash
-    ssh linaro@192.168.1.2 'cd ~ && for k in 3 7 ; do echo "=== O3 - KERNEL $k ===" && ./meu_app_O3 $k 2>&1 | tail -10; done'
+    ./meu_codigo 3
     ```
     
 ---
+
 
 
