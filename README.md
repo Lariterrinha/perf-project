@@ -8,6 +8,9 @@ We applied manual (algorithmic, data access) and compiler (`-O3`) optimizations.
 ---
 
 ## 📂 File Structure
+```bash
+sftp://linaro@192.168.1.2
+```
 ```
 │   myproject.cpp
 │   my_functions.hpp
@@ -75,6 +78,7 @@ This directory contains the source code snapshots from each progressive optimiza
     ```
     
 ---
+
 
 
 
