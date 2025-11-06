@@ -1,0 +1,3 @@
+/user/terrinhl/Téléchargements/drive/drive/build/CMakeFiles/meu_app.dir
+/user/terrinhl/Téléchargements/drive/drive/build/CMakeFiles/edit_cache.dir
+/user/terrinhl/Téléchargements/drive/drive/build/CMakeFiles/rebuild_cache.dir
