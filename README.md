@@ -61,11 +61,11 @@ xeyes
    
 3.  **Transfer Files:** 
 ```bash
-scp my_functions.hpp linaro@192.168.1.2:~/
+scp my_functions.hpp linaro@192.168.1.2:~/br/
 ```
 
 ```bash
-scp my_functions.cpp projet_24_v1.cpp linaro@192.168.1.2:~/
+scp my_functions.cpp projet_24_v1.cpp linaro@192.168.1.2:~/br/
 ```
 
 4. See cameras to change on the code
@@ -92,6 +92,7 @@ g++ -O3 `pkg-config --cflags opencv` projet_24_v1.cpp my_functions.cpp `pkg-conf
 ```
     
 ---
+
 
 
 
