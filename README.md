@@ -56,38 +56,38 @@ export DISPLAY=localhost:10.0
 
 2. Test
 ```bash
-        xeyes
-        cd code/
+xeyes
 ```
    
 3.  **Transfer Files:** 
-    ```bash
-    scp projet_24_v1.cpp linaro@192.168.1.2:~/
-    scp my_functions.cpp my_functions.hpp linaro@192.168.1.2:~/
-    ```
+```bash
+scp projet_24_v1.cpp linaro@192.168.1.2:~/
+scp my_functions.cpp my_functions.hpp linaro@192.168.1.2:~/
+```
 
 4. See cameras to change on the code
-   ```bash
-    sudo rm /dev/video*
-   ```
-   ```bash
-    ls /dev/video*
-   ```
+```bash
+sudo rm /dev/video*
+```
+```bash
+ls /dev/video*
+```
    
    
 3.  **Compile (on board):**
-    ```bash
+```bash
 
-    g++ -03 `pkg-config --cflags opencv` projet_24_v1.cpp my_functions.cpp `pkg-config --libs opencv` -o meu_codigo -lm
-   
-    ```
+g++ -03 `pkg-config --cflags opencv` projet_24_v1.cpp my_functions.cpp `pkg-config --libs opencv` -o meu_codigo -lm
+
+```
     
 4.  **Run (on board):**
-    ```bash
-    ./meu_codigo 3
-    ```
+```bash
+./meu_codigo 3
+```
     
 ---
+
 
 
 
