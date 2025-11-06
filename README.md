@@ -8,9 +8,8 @@ We applied manual (algorithmic, data access) and compiler (`-O3`) optimizations.
 ---
 
 ## 📂 File Structure
-```bash
-sftp://linaro@192.168.1.2
-```
+
+  
 ```
 │   myproject.cpp
 │   my_functions.hpp
@@ -37,6 +36,15 @@ The core implementation file containing the final optimized versions of my_sobel
 This directory contains the source code snapshots from each progressive optimization step (e.g., algorithm_changes, loop_unrolling, optimal_data_access) for analysis, as described in the methodology
 
 ## 🛠️ Build and Run (Optimized)
+
+### Open on file explorer  
+Ctrl + L
+```bash
+sftp://linaro@192.168.1.2
+
+```
+
+### Run
 
 1.Conection
 ```bash
@@ -78,6 +86,7 @@ This directory contains the source code snapshots from each progressive optimiza
     ```
     
 ---
+
 
 
 
