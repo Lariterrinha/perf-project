@@ -27,7 +27,7 @@ We applied manual (algorithmic, data access) and compiler (`-O3`) optimizations.
 * `my_functions.cpp`: Our optimized filter implementations.
 
 ---
-## Quick Links to Key Files:
+## Files:
 ### projet_24_v1.cpp:
 The main application file, which handles video I/O, benchmarking, and calls the filter functions.
 ### my_functions.cpp
@@ -92,6 +92,7 @@ g++ -O3 `pkg-config --cflags opencv` projet_24_v1.cpp my_functions.cpp `pkg-conf
 ```
     
 ---
+
 
 
 
