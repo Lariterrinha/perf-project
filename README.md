@@ -48,8 +48,10 @@ sftp://linaro@192.168.1.2
 
 1.Conection
 ```bash
-        ssh -X linaro@192.168.1.2
-        export DISPLAY=localhost:10.0
+ssh -X linaro@192.168.1.2
+```
+```bash
+export DISPLAY=localhost:10.0
 ```
 
 2. Test
@@ -86,6 +88,7 @@ sftp://linaro@192.168.1.2
     ```
     
 ---
+
 
 
 
