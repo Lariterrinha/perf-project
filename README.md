@@ -46,6 +46,15 @@ sftp://linaro@192.168.1.2
 
 ### Run
 
+0.  **Transfer Files:** 
+```bash
+scp my_functions.hpp linaro@192.168.1.2:~/br/
+```
+
+```bash
+scp my_functions.cpp projet_24_v1.cpp linaro@192.168.1.2:~/br/
+```
+
 1.Conection
 ```bash
 ssh -X linaro@192.168.1.2
@@ -58,17 +67,9 @@ export DISPLAY=localhost:10.0
 ```bash
 xeyes
 ```
-   
-3.  **Transfer Files:** 
-```bash
-scp my_functions.hpp linaro@192.168.1.2:~/br/
-```
+  
 
-```bash
-scp my_functions.cpp projet_24_v1.cpp linaro@192.168.1.2:~/br/
-```
-
-4. See cameras to change on the code
+3. See cameras to change on the code
 ```bash
 sudo rm /dev/video*
 ```
@@ -77,7 +78,7 @@ ls /dev/video*
 ```
    
    
-3.  **Compile (on board):**
+4.  **Compile (on board):**
 ```bash
 cd ~/br
 ```
@@ -86,12 +87,13 @@ cd ~/br
 g++ -O3 `pkg-config --cflags opencv` projet_24_v1.cpp my_functions.cpp `pkg-config --libs opencv` -o meu_codigo -lm
 ```
     
-4.  **Run (on board):**
+5.  **Run (on board):**
 ```bash
 ./meu_codigo 3
 ```
     
 ---
+
 
 
 
