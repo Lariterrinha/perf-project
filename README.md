@@ -79,9 +79,11 @@ ls /dev/video*
    
 3.  **Compile (on board):**
 ```bash
+cd ~/br
+```
 
+```bash
 g++ -O3 `pkg-config --cflags opencv` projet_24_v1.cpp my_functions.cpp `pkg-config --libs opencv` -o meu_codigo -lm
-
 ```
     
 4.  **Run (on board):**
@@ -90,6 +92,7 @@ g++ -O3 `pkg-config --cflags opencv` projet_24_v1.cpp my_functions.cpp `pkg-conf
 ```
     
 ---
+
 
 
 
